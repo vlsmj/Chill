@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Chill</string>
-    <string name="title_movies">Movies</string>
-    <string name="title_tv_shows">TV Shows</string>
+    <string name="title_home">Home</string>
+    <string name="title_movie">Movie</string>
+
+    <string name="featured_movies">FEATURED MOVIES</string>
+    <string name="search_for_a_movie">Search for a movie</string>
+
+    <string name="empty_no_movies_found">Oh snap! No movies found. :(</string>
 </resources>
