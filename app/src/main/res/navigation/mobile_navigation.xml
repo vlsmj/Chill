@@ -3,18 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_movies">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_movies"
-        android:name="com.blueberryprojects.chill.ui.movies.MoviesFragment"
-        android:label="@string/title_movies"
-        tools:layout="@layout/fragment_movies" />
+        android:id="@+id/navigation_home"
+        android:name="com.blueberryprojects.chill.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_movie"
+            app:destination="@id/navigation_movie"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_tv_shows"
-        android:name="com.blueberryprojects.chill.ui.dashboard.TvShowsFragment"
-        android:label="@string/title_tv_shows"
-        tools:layout="@layout/fragment_tv_shows" />
+        android:id="@+id/navigation_movie"
+        android:name="com.blueberryprojects.chill.ui.movie.MovieFragment"
+        android:label="@string/title_movie"
+        tools:layout="@layout/fragment_movie">
+
+        <argument
+            android:name="movie"
+            app:argType="com.blueberryprojects.common.entities.Movie" />
+
+    </fragment>
 
 </navigation>
