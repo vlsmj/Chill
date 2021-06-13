@@ -96,7 +96,7 @@ class MovieFragment : Fragment() {
 
     override fun onPause() {
         super.onPause()
-        chillMediaPlayer.pause()
+        if (::chillMediaPlayer.isInitialized) chillMediaPlayer.pause()
     }
 
     /**
@@ -105,7 +105,7 @@ class MovieFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         showActionBar()
-        chillMediaPlayer.resume()
+        if (::chillMediaPlayer.isInitialized) chillMediaPlayer.resume()
     }
 
     override fun onDestroyView() {
@@ -115,6 +115,6 @@ class MovieFragment : Fragment() {
 
     override fun onDestroy() {
         super.onDestroy()
-        chillMediaPlayer.releasePlayer()
+        if (::chillMediaPlayer.isInitialized) chillMediaPlayer.releasePlayer()
     }
 }
