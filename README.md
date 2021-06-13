@@ -18,7 +18,7 @@ See the iTunes public API documentation here: https://affiliate.itunes.apple.com
 
 I used MVVM here because it is much scalable and maintenable. Retain data on configuration changes and it is much easier to test. MVVM architecture pattern prevents coupling of components. MVVM boilerplates your code but it is worth it in the long run.
 
-# Other Libraries Used.
+# Other Libraries Used
 - Exoplayer for playing media.
 - Glide for setting image.
 - Gson converter factory for Retrofit.
