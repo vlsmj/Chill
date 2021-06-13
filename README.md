@@ -22,4 +22,4 @@ I used MVVM here because it is much scalable and maintenable in the long run. Re
 - Exoplayer for playing media.
 - Glide for setting image.
 - Gson converter factory for Retrofit.
-- Okhttp for easy view of API response.
+- OkHttp for easy view of API response.
