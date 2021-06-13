@@ -16,7 +16,7 @@ See the iTunes public API documentation here: https://affiliate.itunes.apple.com
 - Repository
 - Navigation
 
-I used MVVM here because it is much scalable and maintenable in the long run. Retain data on configuration changes and it is much easier to test. No unit testing has been implemented though :( MVVM architecture pattern prevents coupling of components. MVVM boilerplates your code but it is worth it in the long run.
+I used MVVM here because it is much scalable and maintenable in the long run. Retain data on configuration changes and it is much easier to test. MVVM architecture pattern prevents coupling of components. MVVM boilerplates your code but it is worth it in the long run.
 
 # Other Libraries Used.
 - Exoplayer for playing media.
