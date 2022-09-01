@@ -24,7 +24,7 @@ data class Movie(
     override val previewUrl: String?,
     override val artistName: String?,
     override val collectionViewUrl: String?,
-    override val trackPrice: Double?
+    override val trackPrice: Double?,
 ) : MediaInterface, Serializable {
 
     /**
@@ -34,9 +34,7 @@ data class Movie(
      * @param height The height of the art work.
      */
     fun getPreviewArtworkUrl(width: Int? = 640, height: Int? = 640): String? {
-        val initialSize = artworkUrl100?.substringAfter("source/") ?: "100x100bb.jpg"
-
-        return artworkUrl100?.replace(initialSize, "${width}x${height}bb.jpg")
+        return artworkUrl100?.replace("100x100bb", "${width}x${height}bb")
     }
 
     /**
