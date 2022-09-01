@@ -1,8 +1,10 @@
 # Chill
 
-Chill is a simple demonstration app that uses MVVM + Retrofit + Room to fetch list of movies from iTunes public API, and uses the data to make a simple movie search app. 
+Chill is a simple movie search demonstration app that uses MVVM + Retrofit + Room that fetches list of movies from iTunes public API.
 
-See the iTunes public API documentation here: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#searching
+![chill_1](https://user-images.githubusercontent.com/11737795/187964570-b4f1bf54-6026-460b-ad20-de548364bf8a.gif)![chill_2](https://user-images.githubusercontent.com/11737795/187965290-36921800-dd76-4a62-9c7f-074669d73071.gif)
+
+See the iTunes public API documentation here: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#searching![chill_2](https://user-images.githubusercontent.com/11737795/187965165-f353f375-9692-4aa1-9f66-2950753628eb.gif)
 
 # Core Features
 - MVVM
